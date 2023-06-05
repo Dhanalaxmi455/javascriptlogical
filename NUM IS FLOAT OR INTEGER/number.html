@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function check(x) {
+        if(typeof x =='number' && !isNaN(x)){
+            if (Number.isInteger(x)) {
+            console.log(`${x} is integer.`);
+        }
+        else {
+            console.log(`${x} is a float value.`);
+        }
+    
+    } else {
+        console.log(`${x} is not a number`);
+    }
+}
+
+check('hello');
+check(44);
+check(3.4);
+check(-3.4);
+check(NaN);
+        
+    
+</script>
+</html>

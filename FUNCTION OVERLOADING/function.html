@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function sum() {
+        if(arguments.length==0){
+            console.log("it is empty ")
+        }
+        else if(arguments.length==1){
+            console.log("you can pass atleast one")
+        }
+        else{
+            var result=0;
+            var length=arguments.length;
+            for(i=0;i<length;i++){
+         result=result+arguments[i];
+            }
+            console.log(result);
+        }
+    }
+    sum();
+    sum(5);
+    sum(12,23);
+</script>
+</html>
